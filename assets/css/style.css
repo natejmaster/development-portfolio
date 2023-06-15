@@ -4,6 +4,10 @@
     --white:#FFFFFF;
 }
 
+* {
+   box-sizing: border-box; 
+}
+
 body {
     font-size: 16px;
     display: flex;
@@ -35,14 +39,7 @@ nav {
     background-color: var(--light);
 }
 
-nav li {
-
-}
-
 nav a {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     color: var(--dark);
     padding: 14px 20px;
     text-decoration: none;
@@ -89,6 +86,10 @@ main {
   }
 
   @media screen and (max-width: 768px) {
+    header,
+    nav {
+        flex-direction: column;
+    }
     .card {
       width: 100%;
     }
