@@ -64,14 +64,18 @@ main {
     align-content: center;
     max-width: 100%;
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-radius: 20px;
     padding: 10px;
     margin: 15px 40px;
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #aaaaaa;
     text-align: center;
-    width: 100%; 
+    width: 100%;
+}
+
+.big-project a {
+    text-decoration: none;
 }
 
 .projects {
@@ -93,7 +97,7 @@ main {
 
 .card {
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
@@ -101,6 +105,11 @@ main {
     box-shadow: 10px 10px 5px #aaaaaa;
     text-align: center;
     width: 25%
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
 }
 
 .card header {
