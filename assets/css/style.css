@@ -26,10 +26,15 @@ h2 {
 }
 
 header {
+    font-size: 150%;
     padding: 40px;
     text-align: center;
     background: var(--dark);
     color: var(--light);
+}
+
+header img {
+    padding-bottom: 10px;
 }
 
 nav {
@@ -37,9 +42,11 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: var(--light);
+    border: 5px outset black;
 }
 
 nav a {
+    font-weight: bolder;
     color: var(--dark);
     padding: 14px 20px;
     text-decoration: none;
@@ -55,6 +62,13 @@ main {
     flex-wrap: wrap;
 }
 
+.big-project {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
+}
+
 .projects {
     display: flex;
     flex-direction: row;
@@ -62,7 +76,7 @@ main {
     justify-content: space-evenly;
 }
 
-.card {
+.big-card {
     border-style: solid;
     border-width: 1px;
     border-radius: 20px;
@@ -70,11 +84,37 @@ main {
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #aaaaaa;
     text-align: center;
+    width: fit-content;
 }
+
+.big-card header {
+    font-size: 125%;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.big-card img {
+    width: 100%;
+}
+
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    flex: 0 0 300px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    text-align: center;
+    width: 25%
+}
+
 .card header {
-    font-size:125%;
-    padding:10px;
+    font-size: 125%;
+    font-weight: bold;
+    padding: 10px;
 }
+
 .card img {
     width: 100%;
 }
