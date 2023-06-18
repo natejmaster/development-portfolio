@@ -23,14 +23,10 @@ h2 {
 
 header {
     font-size: 150%;
-    padding: 40px;
+    padding: 10px;
     text-align: center;
     background: var(--dark);
     color: var(--light);
-}
-
-header img {
-    padding-bottom: 10px;
 }
 
 nav {
@@ -125,12 +121,18 @@ main {
 }
 
 @media screen and (max-width: 992px) {
+    h1 {
+        font-size: 150%}
+    
     .card {
       width: 50%;
     }
   }
 
   @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 100%;
+    }
     header,
     nav {
         flex-direction: column;
