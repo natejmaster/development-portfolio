@@ -4,6 +4,13 @@
     --white:#FFFFFF;
 }
 
+hr.rounded {
+    border-top: 8px solid var(--dark);
+    border-radius: 5px;
+    background-color: var(--dark);
+    margin: 5px 0px;
+}
+
 body {
     font-size: 16px;
     display: flex;
@@ -66,7 +73,7 @@ main {
     padding: 20px;
     margin: 10px auto;
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
 
 .big-project a {
@@ -79,11 +86,11 @@ main {
     font-size: 125%;
     font-weight: bold;
     padding: 10px;
-    max-width: 90%;
+    max-width: 98%;
 }
 
 .big-project img {
-    max-width: 90%;
+    max-width: 98%;
 }
 
 .projects {
