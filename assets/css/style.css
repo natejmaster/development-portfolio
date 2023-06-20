@@ -8,7 +8,7 @@ hr.rounded {
     border-top: 8px solid var(--dark);
     border-radius: 5px;
     background-color: var(--dark);
-    margin: 5px 0px;
+    margin: 10px 0;
 }
 
 body {
@@ -26,6 +26,16 @@ h1 {
 h2 {
     font-size: 175%;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 150%;
+    margin:20px;
+}
+
+h3 a {
+    color: var(--dark);
 }
 
 header {
@@ -59,6 +69,7 @@ nav a:hover {
 main {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .big-project {
@@ -74,10 +85,13 @@ main {
     margin: 10px auto;
     text-align: center;
     width: 60%;
+    color: black;
 }
 
-.big-project a {
+.big-project a,
+.card a {
     text-decoration: none;
+    color: black;
 }
 
 .big-project header {
@@ -87,10 +101,13 @@ main {
     font-weight: bold;
     padding: 10px;
     max-width: 98%;
+    border-radius: 20px 20px 0 0;
 }
 
 .big-project img {
     max-width: 98%;
+    border-radius: 0 0 20px 20px;
+
 }
 
 .projects {
@@ -112,24 +129,37 @@ main {
     width: 25%
 }
 
-.card a {
-    text-decoration: none;
-    color: black;
-}
-
 .card header {
     font-size: 125%;
     font-weight: bold;
     padding: 10px;
+    border-radius: 20px 20px 0 0;
 }
 
 .card img {
     width: 100%;
+    border-radius: 0 0 20px 20px;
+}
+
+.big-project:hover,
+.card:hover {
+    background-color: var(--light);
+}
+
+.contact-me {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 150%}
+
+    h3 {
+            font-size: 92%;
+        }
     
     .card {
       width: 50%;
@@ -140,11 +170,18 @@ main {
     h1 {
         font-size: 100%;
     }
+    
+    h3 {
+        font-size: 70%;
+    }
+
     header,
     nav {
         flex-direction: column;
     }
-    .card {
-      width: 100%;
+    .card,
+    .big-project {
+      width: 96%;
+      margin: 10px 2px;
     }
     }
