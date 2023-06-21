@@ -1,9 +1,11 @@
+/* Color variables for styling purposes */
 :root {
     --dark:#004C54;
     --light:#A5ACAF;
     --white:#FFFFFF;
 }
 
+/* Rounded divider styling */
 hr.rounded {
     border-top: 8px solid var(--dark);
     border-radius: 5px;
@@ -11,6 +13,7 @@ hr.rounded {
     margin: 10px 0;
 }
 
+/* Styling specifications for body and headings */
 body {
     font-size: 16px;
     display: flex;
@@ -38,6 +41,7 @@ h3 a {
     color: var(--dark);
 }
 
+/* Header and Nav bar styling */
 header {
     font-size: 150%;
     padding: 10px;
@@ -66,6 +70,7 @@ nav a:hover {
     color: var(--white);
 }
 
+/* Styling for larger image card and project */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +115,7 @@ main {
 
 }
 
+/* Styling specifications for smaller project cards */
 .projects {
     display: flex;
     flex-direction: row;
@@ -141,11 +147,6 @@ main {
     border-radius: 0 0 20px 20px;
 }
 
-.big-project:hover,
-.card:hover {
-    background-color: var(--light);
-}
-
 .contact-me {
     width: 100%;
     display: flex;
@@ -153,28 +154,25 @@ main {
     justify-content: space-evenly;
 }
 
+.big-project:hover,
+.card:hover {
+    background-color: var(--light);
+}
+
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 150%}
 
-    h3 {
-            font-size: 92%;
-        }
-    
     .card {
       width: 50%;
     }
-  }
+}
 
   @media screen and (max-width: 768px) {
     h1 {
         font-size: 100%;
     }
     
-    h3 {
-        font-size: 70%;
-    }
-
     header,
     nav {
         flex-direction: column;
@@ -183,5 +181,9 @@ main {
     .big-project {
       width: 96%;
       margin: 10px 2px;
+    }
+    
+    .contact-me {
+        flex-direction: column;
     }
     }
