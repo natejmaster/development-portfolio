@@ -70,13 +70,31 @@ nav a:hover {
     color: var(--white);
 }
 
-/* Styling for larger image card and project */
+/* Default responsive styling for most of body*/
 main {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
 
+/* About Me section styling */
+.photo-bio {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.photo-bio p {
+    align-self: center;
+}
+
+.photo-bio img {
+    margin: auto 5% 1% 8%;
+    height: 10%;
+    width: 10%;
+}
+
+/* Styling for larger image card and project */
 .big-project {
     display: flex;
     flex-direction: column;
@@ -183,6 +201,16 @@ footer {
     header,
     nav {
         flex-direction: column;
+    }
+    .photo-bio {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .photo-bio img {
+        margin: auto auto 4% auto;
+        height: 30%;
+        width: 30%;
     }
     .card,
     .big-project {
