@@ -7,10 +7,10 @@
 
 /* Rounded divider styling */
 hr.rounded {
-    border-top: 8px solid var(--dark);
+    border-top: 8px solid var(--light);
     border-radius: 5px;
-    background-color: var(--dark);
-    margin: 10px 0;
+    background-color: var(--light);
+    margin: 5px 0;
 }
 
 /* Styling specifications for body and headings */
@@ -28,8 +28,10 @@ h1 {
 
 h2 {
     font-size: 175%;
+    margin-top: 5px;
     margin-bottom: 10px;
     text-align: center;
+    color: var(--light);
 }
 
 h3 {
@@ -75,6 +77,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    background-color: var(--dark);
+}
+
+main p {
+    color: var(--light);
 }
 
 /* About Me section styling */
@@ -86,6 +93,7 @@ main {
 
 .photo-bio p {
     align-self: center;
+    font-size: 140%;
 }
 
 .photo-bio img {
@@ -108,9 +116,13 @@ main {
     margin: 10px auto;
     text-align: center;
     width: 60%;
+    background-color: var(--white);
     color: black;
 }
-
+.big-project p,
+.card p {
+    color: black;
+}
 .big-project a,
 .card a {
     text-decoration: none;
@@ -150,7 +162,8 @@ main {
     flex: 0 0 300px;
     box-shadow: 10px 10px 5px #aaaaaa;
     text-align: center;
-    width: 25%
+    width: 25%;
+    background-color: var(--white)
 }
 
 .card header {
@@ -167,11 +180,17 @@ main {
 
 /* Styling for final main section: Contact Me */
 .contact-me {
+    background-color: var(--dark);
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.contact-me a {
+    color: var(--light);
+}
+
 /* Styling for footer section */
 footer {
     text-align: center;
