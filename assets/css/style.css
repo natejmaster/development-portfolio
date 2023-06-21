@@ -147,18 +147,25 @@ main {
     border-radius: 0 0 20px 20px;
 }
 
+/* Styling for final main section: Contact Me */
 .contact-me {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
+/* Styling for footer section */
+footer {
+    text-align: center;
+}
 
+/* Modifies cards to slightly darken background when hover over */
 .big-project:hover,
 .card:hover {
     background-color: var(--light);
 }
 
+/* Media queries to increase responsiveness of style elements */
 @media screen and (max-width: 992px) {
     h1 {
         font-size: 150%}
