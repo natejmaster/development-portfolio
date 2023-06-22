@@ -119,10 +119,12 @@ main p {
     background-color: var(--white);
     color: black;
 }
+
 .big-project p,
 .card p {
     color: black;
 }
+
 .big-project a,
 .card a {
     text-decoration: none;
@@ -209,6 +211,10 @@ footer {
 
     .card {
       width: 50%;
+    }
+
+    .photo-bio img {
+        margin-bottom: 10%;
     }
 }
 
