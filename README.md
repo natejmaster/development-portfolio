@@ -7,9 +7,9 @@ Specific Skills Utilized: Beyond the standards of semantic html development disp
     --Pseudo-Selectors: Numerous elements, both links and images, adapt when hovered upon by the user's mouse, typically displaying a color change or background color change.
     -- Flexbox Display: The portfolio site features multiple flexbox containers that will modify how images and other content are displayed depending on screen dimensions.
 
-    Link to Deployed Site:
+    Link to Deployed Site: https://natejmaster.github.io/development-portfolio/
 
-    Screenshots of Deployed Site:
+    Screenshots of Deployed Site (fullscreen):
 ![Screenshot](./assets/images/screenshot-1.png)
 ![Screenshot](./assets/images/screenshot-2.png)
 
